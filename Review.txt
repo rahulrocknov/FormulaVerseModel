@@ -1,0 +1,21 @@
+Please ensure your presentation covers the following key points:
+
+Literature Review
+
+Identified Research Gaps
+
+Project Objectives
+
+Hardware and Software Specifications
+
+Gantt Chart with Work Breakdown Structure
+
+Requirement Analysis (SRS)
+
+Workflow Model (any diagrammatic representation)
+
+Module Design and Implementation (minimum 30% completed)
+
+Project Report – Submit a hard copy (one per team) to your respective guide
+
+For your reference, a report template has been attache

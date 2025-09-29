@@ -1,0 +1,734 @@
+[
+  {
+    "id": "A1",
+    "tags": [
+      "linear",
+      "rate",
+      "realistic"
+    ],
+    "template": "{name} has {a} apples. They buy {b} more. How many apples does {name} have now?",
+    "slot_vars": [
+      "a",
+      "b",
+      "name"
+    ]
+  },
+  {
+    "id": "A2",
+    "tags": [
+      "linear",
+      "unknown",
+      "realistic"
+    ],
+    "template": "A taxi charges a base fare of {a} rupees plus {b} rupees per kilometer. If the total fare for a {d} km journey is {total}, how many kilometers did the passenger travel?",
+    "slot_vars": [
+      "a",
+      "b",
+      "d",
+      "total"
+    ]
+  },
+  {
+    "id": "A3",
+    "tags": [
+      "linear",
+      "algebraic",
+      "fictional"
+    ],
+    "template": "In a magic garden every {x}th flower blooms twice as many petals as the previous. If the function of petals is described by {expr}, what is the number of petals at position x?",
+    "slot_vars": [
+      "x",
+      "expr"
+    ]
+  },
+  {
+    "id": "P1",
+    "tags": [
+      "quadratic",
+      "roots",
+      "realistic"
+    ],
+    "template": "A projectile thrown upward has height modeled by h(t) = {expr}. When will the projectile hit the ground (h=0)?",
+    "slot_vars": [
+      "expr"
+    ]
+  },
+  {
+    "id": "P2",
+    "tags": [
+      "quadratic",
+      "vertex",
+      "geometry"
+    ],
+    "template": "A parabolic reflector shaped by y = {expr} focuses light at its vertex. Find the vertex and explain where the focus would be.",
+    "slot_vars": [
+      "expr"
+    ]
+  },
+  {
+    "id": "P3",
+    "tags": [
+      "polynomial",
+      "coefficients",
+      "realistic"
+    ],
+    "template": "A farmer grows crops in plots. The total yield in kg is modeled by {expr}. If x is the number of plots, what is the yield for x={val}?",
+    "slot_vars": [
+      "expr",
+      "val"
+    ]
+  },
+  {
+    "id": "R1",
+    "tags": [
+      "ratio",
+      "proportion",
+      "realistic"
+    ],
+    "template": "A recipe needs {a} cups of flour and {b} cups of sugar. If we scale the recipe by factor k, how much sugar is needed?",
+    "slot_vars": [
+      "a",
+      "b",
+      "k"
+    ]
+  },
+  {
+    "id": "D1",
+    "tags": [
+      "derivative",
+      "rate",
+      "calculus",
+      "realistic"
+    ],
+    "template": "The temperature T(t) of a chemical increases according to T(t) = {expr}. What is the instantaneous rate of change of temperature at time t={val}?",
+    "slot_vars": [
+      "expr",
+      "val"
+    ]
+  },
+  {
+    "id": "D2",
+    "tags": [
+      "integral",
+      "area",
+      "calculus",
+      "realistic"
+    ],
+    "template": "Water fills a tank with inflow rate r(t) = {expr} liters/hour. How much water enters during the first {T} hours?",
+    "slot_vars": [
+      "expr",
+      "T"
+    ]
+  },
+  {
+    "id": "T1",
+    "tags": [
+      "trig",
+      "angle",
+      "geometry"
+    ],
+    "template": "A ladder leans against a wall forming angle θ with the ground. If the top height is given by h(θ) = {expr}, find the height when θ={val} degrees.",
+    "slot_vars": [
+      "expr",
+      "val"
+    ]
+  },
+  {
+    "id": "G1",
+    "tags": [
+      "area",
+      "geometry",
+      "realistic"
+    ],
+    "template": "A rectangular garden has length L and width W so the area is A = {expr}. If L = {Lval} and W = {Wval}, what is the area?",
+    "slot_vars": [
+      "expr",
+      "Lval",
+      "Wval"
+    ]
+  },
+  {
+    "id": "G2",
+    "tags": [
+      "circle",
+      "geometry",
+      "realistic"
+    ],
+    "template": "A circular pond has area given by A = {expr}. What is the radius of the pond?",
+    "slot_vars": [
+      "expr"
+    ]
+  },
+  {
+    "id": "S1",
+    "tags": [
+      "system",
+      "algebra",
+      "realistic"
+    ],
+    "template": "Two friends A and B have amounts summing to {total}. A has {expr1} more than B. How much does each have?",
+    "slot_vars": [
+      "total",
+      "expr1"
+    ]
+  },
+  {
+    "id": "C1",
+    "tags": [
+      "optimization",
+      "calculus",
+      "realistic"
+    ],
+    "template": "A box with square base and open top has volume V = {expr}. Find the base side x that minimizes surface area.",
+    "slot_vars": [
+      "expr"
+    ]
+  },
+  {
+    "id": "F1",
+    "tags": [
+      "fictional",
+      "polynomial",
+      "story"
+    ],
+    "template": "In the land of Numeria, the number of dragons is given by D(x) = {expr}. If x is the month number, how many dragons in month {m}?",
+    "slot_vars": [
+      "expr",
+      "m"
+    ]
+  },
+  {
+    "id": "L1",
+    "tags": [
+      "logarithm",
+      "realistic"
+    ],
+    "template": "The decibel level L is given by L = {expr}. If a sound has level {val} dB, find the corresponding intensity ratio.",
+    "slot_vars": [
+      "expr",
+      "val"
+    ]
+  },
+  {
+    "id": "E1",
+    "tags": [
+      "exponential",
+      "growth",
+      "realistic"
+    ],
+    "template": "A bacteria culture grows as N(t) = {expr}. How many bacteria after {t} hours?",
+    "slot_vars": [
+      "expr",
+      "t"
+    ]
+  },
+  {
+    "id": "Q1",
+    "tags": [
+      "quadratic",
+      "wordproblem",
+      "realistic"
+    ],
+    "template": "The area of a rectangle is expressed as A(x) = {expr} where x is length. Find the possible widths.",
+    "slot_vars": [
+      "expr"
+    ]
+  },
+  {
+    "id": "M1",
+    "tags": [
+      "mean",
+      "statistics",
+      "realistic"
+    ],
+    "template": "An exam has scores modeled by S(x) = {expr}. If x is the number of students, what is average score when x = {val}?",
+    "slot_vars": [
+      "expr",
+      "val"
+    ]
+  },
+  {
+    "id": "V1",
+    "tags": [
+      "velocity",
+      "derivative",
+      "physics"
+    ],
+    "template": "Position of a car is s(t) = {expr}. What is its velocity and acceleration at time t={t}?",
+    "slot_vars": [
+      "expr",
+      "t"
+    ]
+  },
+  {
+    "id": "A4",
+    "tags": [
+      "absolute",
+      "algebra",
+      "realistic"
+    ],
+    "template": "The temperature difference is modeled by f(x) = {expr}. For which x does the temperature difference equal zero?",
+    "slot_vars": [
+      "expr"
+    ]
+  },
+  {
+    "id": "P4",
+    "tags": [
+      "polynomial",
+      "roots",
+      "fictional"
+    ],
+    "template": "A potion requires mixing metals such that mass satisfies {expr}. Solve for the feasible masses.",
+    "slot_vars": [
+      "expr"
+    ]
+  },
+  {
+    "id": "T2",
+    "tags": [
+      "trig",
+      "wave",
+      "realistic"
+    ],
+    "template": "A wave has displacement y(x,t) = {expr}. What is displacement at position x={x0} and time t={t0}?",
+    "slot_vars": [
+      "expr",
+      "x0",
+      "t0"
+    ]
+  },
+  {
+    "id": "G3",
+    "tags": [
+      "volume",
+      "geometry",
+      "realistic"
+    ],
+    "template": "A cone's volume is V = {expr}. If the height is {h} and radius r, find r when V = {Vval}.",
+    "slot_vars": [
+      "expr",
+      "h",
+      "Vval"
+    ]
+  },
+  {
+    "id": "S2",
+    "tags": [
+      "sequence",
+      "algebra",
+      "realistic"
+    ],
+    "template": "A savings account balance after n months is modeled by S(n) = {expr}. What is the balance after n={nval} months?",
+    "slot_vars": [
+      "expr",
+      "nval"
+    ]
+  },
+  {
+    "id": "I1",
+    "tags": [
+      "inequality",
+      "algebra",
+      "realistic"
+    ],
+    "template": "The feasible region for production is given by {expr}. For which x is the constraint satisfied?",
+    "slot_vars": [
+      "expr"
+    ]
+  },
+  {
+    "id": "B1",
+    "tags": [
+      "binomial",
+      "probability",
+      "realistic"
+    ],
+    "template": "The probability of k successes is given by P(k) = {expr}. What is P when k={kval}?",
+    "slot_vars": [
+      "expr",
+      "kval"
+    ]
+  },
+  {
+    "id": "PL1",
+    "tags": [
+      "parametric",
+      "geometry",
+      "realistic"
+    ],
+    "template": "A curve is parameterized by x(t) = {exprx}, y(t) = {expry}. Find the slope dy/dx at t={t0}.",
+    "slot_vars": [
+      "exprx",
+      "expry",
+      "t0"
+    ]
+  },
+  {
+    "id": "EX1",
+    "tags": [
+      "derivative",
+      "explain",
+      "pedagogical"
+    ],
+    "template": "Explain in plain words what the derivative of f(x) = {expr} tells us about the quantity modeled by x.",
+    "slot_vars": [
+      "expr"
+    ]
+  },
+  {
+    "id": "AR1",
+    "tags": [
+      "percent",
+      "finance",
+      "realistic"
+    ],
+    "template": "An item priced at {p} rupees is discounted by {d}%. What is the sale price?",
+    "slot_vars": [
+      "p",
+      "d"
+    ]
+  },
+  {
+    "id": "AR2",
+    "tags": [
+      "interest",
+      "finance",
+      "realistic"
+    ],
+    "template": "An investment of {P} rupees earns annual simple interest at rate r% for t years. What is the total amount?",
+    "slot_vars": [
+      "P",
+      "r",
+      "t"
+    ]
+  },
+  {
+    "id": "AR3",
+    "tags": [
+      "compound",
+      "finance",
+      "realistic"
+    ],
+    "template": "An amount P grows with compound interest compounded {n} times per year at rate r. Write formula and compute after t years.",
+    "slot_vars": [
+      "P",
+      "r",
+      "n",
+      "t"
+    ]
+  },
+  {
+    "id": "MX1",
+    "tags": [
+      "mixture",
+      "algebra",
+      "realistic"
+    ],
+    "template": "Mixing solutions: {a} liters at concentration {c1}% mixed with {b} liters at {c2}%. What is final concentration?",
+    "slot_vars": [
+      "a",
+      "c1",
+      "b",
+      "c2"
+    ]
+  },
+  {
+    "id": "MV1",
+    "tags": [
+      "motion",
+      "kinematics",
+      "physics"
+    ],
+    "template": "A car accelerates with a(t) = {expr}. If initial velocity is v0, find v(t) and distance traveled after T seconds.",
+    "slot_vars": [
+      "expr",
+      "v0",
+      "T"
+    ]
+  },
+  {
+    "id": "ST1",
+    "tags": [
+      "stats",
+      "variance",
+      "realistic"
+    ],
+    "template": "A dataset has values described by {expr}. Compute mean and variance for n samples.",
+    "slot_vars": [
+      "expr",
+      "n"
+    ]
+  },
+  {
+    "id": "CM1",
+    "tags": [
+      "combinatorics",
+      "counting",
+      "realistic"
+    ],
+    "template": "How many ways can you choose k items from n items? Express as a function and compute for n={n}, k={k}.",
+    "slot_vars": [
+      "n",
+      "k"
+    ]
+  },
+  {
+    "id": "PR1",
+    "tags": [
+      "probability",
+      "continuous",
+      "realistic"
+    ],
+    "template": "A random variable has PDF f(x) = {expr}. What is P(a < X < b)?",
+    "slot_vars": [
+      "expr",
+      "a",
+      "b"
+    ]
+  },
+  {
+    "id": "PR2",
+    "tags": [
+      "probability",
+      "expected value",
+      "realistic"
+    ],
+    "template": "A discrete variable has PMF p(k) = {expr}. What is E[K]?",
+    "slot_vars": [
+      "expr"
+    ]
+  },
+  {
+    "id": "LA1",
+    "tags": [
+      "linear algebra",
+      "matrix",
+      "realistic"
+    ],
+    "template": "Given matrix A = {expr}, compute determinant and eigenvalues.",
+    "slot_vars": [
+      "expr"
+    ]
+  },
+  {
+    "id": "DI1",
+    "tags": [
+      "diff eq",
+      "ODE",
+      "realistic"
+    ],
+    "template": "Solve the differential equation dy/dt + p(t) y = q(t) for given p(t) and q(t) when y(0) = y0.",
+    "slot_vars": [
+      "expr",
+      "y0"
+    ]
+  },
+  {
+    "id": "OP1",
+    "tags": [
+      "optimization",
+      "constraint",
+      "realistic"
+    ],
+    "template": "Maximize f(x,y) = {expr} subject to constraint g(x,y) = {constraint}. Find stationary points.",
+    "slot_vars": [
+      "expr",
+      "constraint"
+    ]
+  },
+  {
+    "id": "SR1",
+    "tags": [
+      "series",
+      "convergence",
+      "analysis"
+    ],
+    "template": "Consider the series sum_{n=1}^∞ {expr}. Does it converge? If so, to what?",
+    "slot_vars": [
+      "expr"
+    ]
+  },
+  {
+    "id": "CN1",
+    "tags": [
+      "complex",
+      "roots",
+      "algebra"
+    ],
+    "template": "Solve for complex roots of z^n = {expr} and list them.",
+    "slot_vars": [
+      "expr",
+      "n"
+    ]
+  },
+  {
+    "id": "TR1",
+    "tags": [
+      "trig",
+      "identities",
+      "pedagogical"
+    ],
+    "template": "Verify the identity {expr}. Show steps using trig transformations.",
+    "slot_vars": [
+      "expr"
+    ]
+  },
+  {
+    "id": "PL2",
+    "tags": [
+      "polar",
+      "coordinates",
+      "geometry"
+    ],
+    "template": "Convert polar equation r = {expr} to Cartesian coordinates and sketch key features.",
+    "slot_vars": [
+      "expr"
+    ]
+  },
+  {
+    "id": "PH1",
+    "tags": [
+      "physics",
+      "energy",
+      "realistic"
+    ],
+    "template": "A spring with constant k has potential energy U(x) = {expr}. Find the force and equilibrium.",
+    "slot_vars": [
+      "expr"
+    ]
+  },
+  {
+    "id": "EC1",
+    "tags": [
+      "circuits",
+      "ohm",
+      "realistic"
+    ],
+    "template": "For a circuit with voltage V and resistance R where V = {expr}, compute current and power.",
+    "slot_vars": [
+      "expr"
+    ]
+  },
+  {
+    "id": "CH1",
+    "tags": [
+      "chemistry",
+      "concentration",
+      "realistic"
+    ],
+    "template": "Concentration changes according to C(t) = {expr}. What is concentration after t={t}?",
+    "slot_vars": [
+      "expr",
+      "t"
+    ]
+  },
+  {
+    "id": "GR1",
+    "tags": [
+      "growth",
+      "decay",
+      "realistic"
+    ],
+    "template": "Radioactive material decays as N(t) = {expr}. What fraction remains after T years?",
+    "slot_vars": [
+      "expr",
+      "T"
+    ]
+  },
+  {
+    "id": "AM1",
+    "tags": [
+      "amortization",
+      "finance",
+      "realistic"
+    ],
+    "template": "A loan of amount L has monthly payment formula P = {expr}. Compute monthly payment for given L, r, n.",
+    "slot_vars": [
+      "expr",
+      "L",
+      "r",
+      "n"
+    ]
+  },
+  {
+    "id": "PD1",
+    "tags": [
+      "distribution",
+      "normal",
+      "stats"
+    ],
+    "template": "A measurement X ~ N(μ, σ^2) with PDF {expr}. What is probability X in [a,b]?",
+    "slot_vars": [
+      "expr",
+      "a",
+      "b"
+    ]
+  },
+  {
+    "id": "HT1",
+    "tags": [
+      "hypothesis",
+      "testing",
+      "stats"
+    ],
+    "template": "Given sample mean xbar and population mean μ0 with known σ, perform z-test and state conclusion.",
+    "slot_vars": [
+      "xbar",
+      "μ0",
+      "σ",
+      "n"
+    ]
+  },
+  {
+    "id": "SP1",
+    "tags": [
+      "sampling",
+      "estimators",
+      "stats"
+    ],
+    "template": "Describe the unbiased estimator for parameter θ given samples with likelihood L(θ).",
+    "slot_vars": [
+      "expr"
+    ]
+  },
+  {
+    "id": "FT1",
+    "tags": [
+      "fourier",
+      "transform",
+      "analysis"
+    ],
+    "template": "Find the Fourier transform of f(t) = {expr} and state its main properties.",
+    "slot_vars": [
+      "expr"
+    ]
+  },
+  {
+    "id": "SE1",
+    "tags": [
+      "series",
+      "taylor",
+      "analysis"
+    ],
+    "template": "Find the Taylor series expansion of f(x) = {expr} about x={a} up to n terms.",
+    "slot_vars": [
+      "expr",
+      "a",
+      "n"
+    ]
+  },
+  {
+    "id": "MD1",
+    "tags": [
+      "modular",
+      "number theory",
+      "puzzling"
+    ],
+    "template": "Find the remainder when {expr} is divided by m.",
+    "slot_vars": [
+      "expr",
+      "m"
+    ]
+  }
+]

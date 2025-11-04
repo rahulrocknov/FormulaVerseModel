@@ -1,3 +1,7 @@
 __pycache__/
 datasets/
 venv/
+flan_t5_base_formulaVerse_mac
+flan_t5_formulaVerse_mac
+results_flan_t5_base_mac
+results_flan_t5_small_mac

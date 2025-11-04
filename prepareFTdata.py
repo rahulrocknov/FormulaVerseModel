@@ -45,7 +45,7 @@ def main():
         input_text = (
             f"Template: {template_str}. "
             f"Arguments: {args_text}. "
-            f"Task: Generate a realistic math word problem that matches this equation."
+            f"Instruction: Generate a natural language math word problem from this symbolic equation."
         )
 
         # TARGET: actual human problem
